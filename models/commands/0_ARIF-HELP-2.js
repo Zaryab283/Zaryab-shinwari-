@@ -2,8 +2,8 @@ module.exports.config = {
   name: "help2",
   version: "1.0.2",
   hasPermssion: 0,
-  credits: "ARIF BABU",
-  description: "THIS BOT IS MR ARIF BABU",
+  credits: "SHAAN KHAN",
+  description: "THIS BOT IS SHAAN KHAN K",
   usePrefix: true,
   commandCategory: "BOT-ALL-COMMAND-NAME",
   usages: "HELP-2",
@@ -67,9 +67,9 @@ module.exports. run = function({ api, event, args, getText }) {
     for (let item of returnArray) msg += `𒁍  [${++i}] → ${prefix}${item} ♥️ \n`;
 
 
-    const siu = `┏━━━━━┓\n    ARIF-BABU                    ✧═══•❁😛❁•═══✧\n┗━━━━━┛\n\n\n✧═══❁♥️TOTAL COMMAND LIST ♥️❁═══✧`;
+    const siu = `┏━━━━━┓\n    𝐒𝐇𝐀𝐀𝐍-𝐊𝐇𝐀𝐍                    ✧═══•❁😛❁•═══✧\n┗━━━━━┛\n\n\n✧═══❁♥️TOTAL COMMAND LIST ♥️❁═══✧`;
 
- const text = `PAGE 𒁍  [ ${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)} ]\n\nOR COMMAND KE LIYE HAI MENU TYPE KRO\nTHIS BOT IS MADE BYE MR ARIF BABU 🙂✌️\n\n\n\n❁ ═════ ❃ARIF-BABU❃ ═════ ❁`;
+ const text = `PAGE 𒁍  [ ${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)} ]\n\nOR COMMAND KE LIYE HAI MENU TYPE KRO\nTHIS BOT IS MADE BYE SHAAN KHAN K 🙂✌️\n\n\n\n❁ ═════ ❃SHAAN-KHAN❃ ═════ ❁`;
 
     return api.sendMessage(siu + "\n\n" + msg  + text, threadID, async (error, info) => {
       if (autoUnsend) {
