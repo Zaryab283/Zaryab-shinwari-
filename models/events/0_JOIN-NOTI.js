@@ -2,7 +2,7 @@ module.exports.config = {
   name: "joinNoti",
   eventType: ["log:subscribe"],
   version: "1.0.1",
-  credits: "ARIF BABU",
+  credits: "SHAAN KHAN",
   description: "Notify bots or people entering the group",
   dependencies: {
     "fs-extra": ""
@@ -40,7 +40,7 @@ api.getUserInfo(parseInt(userID), (err, data) => {
         memLength.push(participantIDs.length - i++);
 memLength.sort((a, b) => a - b);
 
-      (typeof threadData.customJoin == "undefined") ? msg = "┏━━━━━┓\n     𝐒𝐇𝐀𝐀𝐍-𝐊𝐇𝐀𝐍 𝐊             ✧═•❁𝗪𝗘𝗟𝗖𝗢𝗠𝗘❁•═✧\n┗━━━━━┛\n\n\nHELLO 𒁍 {name} {type}\nWELCOME TO {threadName}\n════════════════════════ ❁\nMY BOSS  𒁍 𝐌𝐑 𝐒𝐇𝐀𝐀𝐍 𝐊𝐇𝐀𝐍  🌺\n════════════════════════ ❁\nFACEBOOK ID LINK 🔗 𒁍 https://www.facebook.com/profile.php?id=61553634015672&mibextid=kFxxJD\n════════════════════════ ❁\n𝖬𝖮𝖲𝖳 𝖶𝖤𝖫𝖢𝖮𝖬𝖤 𝖳𝖮 SHAAN  𝖡𝖮𝖳\n════════════════════════ ❁\nBOT UPDATING 𒁍 𝐌𝐑 𝐒𝐇𝐀𝐀𝐍 𝐊𝐇𝐀𝐍  🌺\n════════════════════════ ❁\n\n LATA TERI HI LAGI HA....................... 🌺\n NASHA SAREAAM HOGA....................... 🌺\n HAR LAMHA TUMHARE LABO PE.................. 🌺\n SIRF SHAAN KHAN KA HI NAAM HOGA.........🌺\nAAP IS GROUP KE{soThanhVien}Th Ho MEMBER HO...........🐥\n════════════════════════ ❁\n\nWISH YOU HAVE A GOOD {session}\n{time} ♥️🌺♥️🌺♥️": msg = threadData.customJoin;
+      (typeof threadData.customJoin == "undefined") ? msg = "┏━━━━━┓\n     𝐒𝐇𝐀𝐀𝐍-𝐊𝐇𝐀𝐍 𝐊             ✧═•❁𝗪𝗘𝗟𝗖𝗢𝗠𝗘❁•═✧\n┗━━━━━┛\n\n\nHELLO 𒁍 {name} {type}\nWELCOME TO {threadName}\n════════════════════════ ❁\nMY BOSS  𒁍 𝐌𝐑 𝐒𝐇𝐀𝐀𝐍 𝐊𝐇𝐀𝐍  🌺\n════════════════════════ ❁\nFACEBOOK ID LINK 🔗 𒁍 https://www.facebook.com/profile.php?id=100016828397863&mibextid=kFxxJD\n════════════════════════ ❁\n𝖬𝖮𝖲𝖳 𝖶𝖤𝖫𝖢𝖮𝖬𝖤 𝖳𝖮 SHAAN  𝖡𝖮𝖳\n════════════════════════ ❁\nBOT UPDATING 𒁍 𝐌𝐑 𝐒𝐇𝐀𝐀𝐍 𝐊𝐇𝐀𝐍  🌺\n════════════════════════ ❁\n\n LATA TERI HI LAGI HA....................... 🌺\n NASHA SAREAAM HOGA....................... 🌺\n HAR LAMHA TUMHARE LABO PE.................. 🌺\n SIRF SHAAN KHAN KA HI NAAM HOGA.........🌺\nAAP IS GROUP KE{soThanhVien}Th Ho MEMBER HO...........🐥\n════════════════════════ ❁\n\nWISH YOU HAVE A GOOD {session}\n{time} ♥️🌺♥️🌺♥️": msg = threadData.customJoin;
       msg = msg
       .replace(/\{uName}/g, nameArray.join(', '))
       .replace(/\{type}/g, (memLength.length > 1) ?  'you' : 'Friend')
@@ -48,12 +48,12 @@ memLength.sort((a, b) => a - b);
       .replace(/\{threadName}/g, threadName);			
 
       var link = [
-"https://i.imgur.com/AI8zow3.jpg",
-"https://i.imgur.com/0grK57V.jpg",
-"https://i.imgur.com/AI8zow3.jpg",
-"https://i.imgur.com/0grK57V.jpg",
+"https://i.imgur.com/WPelHJq.jpeg",
+"https://i.imgur.com/ZZuqqYJ.jpeg",
+"https://i.imgur.com/7HaCOuy.jpeg",
+"https://i.imgur.com/hdaWQJF.jpeg",
      ];
-        var callback = () => api.sendMessage({ body: msg, attachment: fs.createReadStream(__dirname + "/cache/leiamnashJ.jpg"), mentions }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/leiamnashJ.jpg"));
+        var callback = () => api.sendMessage({ body: msg, attachment: fs.createReadStream(__dirname + "/cache/leiamnashJ.jpg"), mentions }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/Mivo1705433220981.mp4"));
     return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/cache/leiamnashJ.jpg")).on("close", () => callback());       
             }
 })
