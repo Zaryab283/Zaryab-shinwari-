@@ -192,11 +192,11 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      };
 
      if ((event.body.toLowerCase() == "owner") || (event.body.toLowerCase() == "bot ka malik")) {
-       return api.sendMessage("༻𝐎𝐖𝐍𝐄𝐑:- ☞ ༻☞[𝐎𝐖𝐍𝐄𝐑:☞➸⃝🐼⃝⃞⃟𝙕𝘼𝙍𝙔𝘼𝘽 🎸  ☜ 𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 𝙎𝙝𝙞𝙣𝙬𝙖𝙧𝙞. ☜ ༺༒ ༒𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝༒:- https://www.facebook.com/𝙈𝙍.𝙕𝘼𝙍𝙔𝘼𝘽 345☞    his insta id @zayrabshinwari47 ☜ ༺༒ ༒", threadID);
+       return api.sendMessage("༻𝐎𝐖𝐍𝐄𝐑:- ☞ ༻☞[𝐎𝐖𝐍𝐄𝐑:☞➸⃝🐼⃝⃞⃟𝐒𝐇𝐀𝐀𝐍 🎸  ☜ 𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 𝐒𝐇𝐀𝐀𝐍𝐈. ☜ ༺༒ ༒𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝༒:- https://www.facebook.com/𝙈𝙍.𝙎𝙃𝘼𝘼𝙉 345☞    his insta id @shankhank345 ☜ ༺༒ ༒", threadID);
      };
 
      if ((event.body.toLowerCase() == "tera Malik kon hai") || (event.body.toLowerCase() == "is bot ka malik kon hai")) {
-       return api.sendMessage("Zaryab   shinwari ❤️ My Creator. He loves me & Edit Me Daily. Ye Bot Sirf Owner k Liye h. Mujhe Aap logo ko Hasane k liye banya gya h Toh Muh Latkaye Mat Rakkha Karo. Har Waqt Haste Raho.", threadID);
+       return api.sendMessage("Shaan   Khan ❤️ My Creator. He loves me & Edit Me Daily. Ye Bot Sirf Owner k Liye h. Mujhe Aap logo ko Hasane k liye banya gya h Toh Muh Latkaye Mat Rakkha Karo. Har Waqt Haste Raho.", threadID);
      };
 
     if ((event.body.toLowerCase() == "tera admin kon hai") || (event.body.toLowerCase() == "bot ka admin kon hai")) {
